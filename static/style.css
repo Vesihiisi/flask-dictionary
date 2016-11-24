@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #111111;
+}
+
+main {
+    padding: 1em 2em 1em 2em;
+    max-width: 800px;
+}
+
+.example {
+    font-style: italic;
+    padding-left: 2em;
+}
+
+.wordlist .pos {
+    font-size: 60%;
+    text-transform: uppercase;
+}
+
+.tag {
+    font-size: 70%;
+    background-color: #C2F4FF;
+    margin-right: 0.5em;
+    padding: 2px 7px 2px 7px;
+}
+
+.cite-box {
+    border: 2px solid #C8CFD7;
+    padding: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+a:hover {
+    color: darkred;
+}

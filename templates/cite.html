@@ -1,0 +1,7 @@
+<div class='cite'><p><strong>{{ cite.year }}</strong>:
+{% if cite.url %}
+<a href="{{ cite.url }}">{{ cite.title }}</a>
+{% else %}
+{{ cite.title }}{% endif %}{% if cite.author %}, {{ cite.author }}{% endif %}{% if cite.work %} ({{ cite.work }}){% endif %}
+</p>
+{{ cite.content }}</div>

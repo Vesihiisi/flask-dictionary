@@ -1,0 +1,9 @@
+{% extends "index.html" %}
+{% block body %}
+<h1>{{ total }} items</h1>
+<ul class='wordlist'>
+    {% for word in wordlist %}
+    <li><a href="/w/{{ word._id }}">{{ word.lemma }}</a> <span class='pos'>{{ word.pos }}</span></li>
+    {% endfor %}
+</ul>
+{% endblock %}

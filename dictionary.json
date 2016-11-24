@@ -1,0 +1,479 @@
+[{
+    "_id": "",
+    "lemma": "",
+    "pos": "",
+    "inflection": "",
+    "meanings": [{
+        "order": 1,
+        "definition": ""
+    }]
+}, {
+    "_id": "frågetecken_01",
+    "lemma": "frågetecken",
+    "type": "lemma",
+    "pos": "noun",
+    "inflection": "sv-subst-t-0|rot=frågeteckn",
+    "meanings": [{
+        "order": 1,
+        "definition": "skiljetecknet ?"
+    }, {
+        "order":2,
+        "definition":"skäl till osäkerhet eller tvekan"
+    }]
+}, {
+    "_id": "räta_frågetecken_01",
+    "lemma": "räta ut frågetecken",
+    "pos": "vp",
+    "inflection": "",
+    "type":"idiom",
+    "meanings": [{
+        "order": 1,
+        "definition": "klargöra lösning på problem eller osäkra förhållanden"
+    }]
+}, {
+    "_id": "frågvis_01",
+    "lemma": "frågvis",
+    "pos": "adjective",
+    "inflection": "sv-adj|mask=",
+    "type": "lemma",
+    "meanings": [{
+        "order": 1,
+        "definition": "som ställer många frågor",
+        "examples":["Värst vad du var frågvis i dag!"]
+    }]
+}, {
+    "_id": "utomlandsifrån_01",
+    "lemma": "utomlandsifrån",
+    "pos": "adverb",
+    "inflection": "",
+    "type": "lemma",
+    "meanings": [{
+        "order": 1,
+        "tags": ["finlandssvenska"],
+        "definition": "från utlandet",
+        "cites":[{
+            "content":"Huotari, på sin holme, berättar ännu en gång för Thomas hur det förhåller sig med bestämmelserna om tullfri införsel av nya bilar utomlandsifrån.",
+            "year":1994,
+            "title":"Underbara kvinnor vid vatten",
+            "tags":["skönlitteratur"],
+            "author":"Monika Fagerholm"
+        }]
+    }]
+}, {
+    "_id": "jättelångsam_01",
+    "lemma": "jättelångsam",
+    "pos": "adjective",
+    "inflection": "sv-adj-okomp",
+    "type": "lemma",
+    "meanings": [{
+        "order": 1,
+        "tags": ["vardagligt"],
+        "definition": "mycket långsam"
+    }]
+}, {
+    "_id": "jättesnabb_01",
+    "lemma": "jättesnabb",
+    "pos": "adjective",
+    "type": "lemma",
+    "inflection": "sv-adj-okomp",
+    "meanings": [{
+        "order": 1,
+        "tags": ["vardagligt"],
+        "definition": "mycket snabb",
+        "examples": ["Hon är jättesnabb – du hinner aldrig ifatt henne!"]
+    }]
+}, {
+    "_id": "snabbtåg_01",
+    "lemma": "snabbtåg",
+    "pos": "noun",
+    "type": "lemma",
+    "inflection": "sv-subst-t-0",
+    "meanings": [{
+        "order": 1,
+        "definition": "tåg för persontrafik som kan hålla en högre topphastighet än genomsnittet, ofta 200 km/h eller snabbare"
+    }]
+}, {
+    "_id": "snabb_01",
+    "lemma": "snabb",
+    "pos": "adjective",
+    "type": "lemma",
+    "inflection": "sv-adj",
+    "meanings": [{
+        "order": 1,
+        "definition": "som rör sig eller förändras med hög hastighet",
+        "examples": ["Gasellen kom undan med ett snabbt språng."]
+    }, {
+        "order": 2,
+        "definition": "som inte tar lång tid, hastig, kort",
+        "examples": ["Vi hinner endast med ett snabbt möte."]
+    }]
+}, {
+    "_id": "sakta_mak_01",
+    "lemma": "i sakta mak",
+    "pos": "advp",
+    "type": "lemma",
+    "inflection": "",
+    "tags": ["idiom"],
+    "meanings": [{
+        "order": 1,
+        "definition": "långsamt",
+        "cites": [{
+            "author": "Hjalmar Söderberg",
+            "year": 1905,
+            "tags": ["skönlitteratur"],
+            "title":"Doktor Glas",
+            "content": "Jag går gatan ner i sakta mak, träffar emellanåt en bekant och står och pratar en stund i ett gathörn."
+        }]
+    }]
+}, {
+    "_id": "sakta_01",
+    "lemma": "sakta",
+    "pos": "adverb",
+    "type": "lemma",
+    "inflection": "sv-adv|rot=sakt",
+    "meanings": [{
+        "order": 1,
+        "definition": "med låg fart",
+        "examples": ["Jag rörde mig sakta framåt."]
+    }]
+}, {
+    "_id": "långsamt_01",
+    "lemma": "långsamt",
+    "type": "lemma",
+    "pos": "adverb",
+    "inflection": "sv-adv|rot=långsamm",
+    "meanings": [{
+        "order": 1,
+        "definition": "med låg hastighet",
+        "examples": ["Bilen körde långsamt."]
+    }, {
+        "order": 2,
+        "definition": "med låg förändringshastighet",
+        "examples": ["Sveriges befolkning växer långsamt."]
+    }]
+}, {
+    "_id": "långsam_01",
+    "lemma": "långsam",
+    "type": "lemma",
+    "pos": "adjective",
+    "inflection": "sv-adj|mask=|rot=långsamm",
+    "meanings": [{
+        "order": 1,
+        "definition": "som rör sig med låg hastighet",
+        "examples": ["Den här bilen är riktigt långsam om man jämför den med andra bilar."]
+    }, {
+        "order": 2,
+        "definition": "om förändring: som tar lång tid",
+        "examples": ["Befolkningens tillväxt i Sverige är långsam."]
+    }, {
+        "order": 3,
+        "definition": "som har låg frekvens; som verkar sällan i förhållande till tiden",
+        "examples": ["Vilka långsamma gevär du säljer!"]
+    }, {
+        "order": 4,
+        "definition": "om person: som tar längre tid på sig att förstå saker än andra personer; som inte är intelligent"
+    }]
+}, {
+    "_id": "tillförsikt_01",
+    "type": "lemma",
+    "lemma": "tillförsikt",
+    "pos": "noun",
+    "inflection": "sv-subst-n-oräkn",
+    "meanings": [{
+        "order": 1,
+        "definition": "tro på gynnsam utveckling",
+        "examples": ["Likväl är det svårt att känna någon större entusiasm eller tillförsikt."]
+    }]
+}, {
+    "_id": "fylld_tillförsikt_01",
+    "lemma": "fylld av tillförsikt",
+    "pos": "vp",
+    "inflection": "",
+    "type":"collocation"
+}, {
+    "_id": "se_fram_tillförsikt_01",
+    "lemma": "se fram emot något med tillförsikt",
+    "pos": "vp",
+    "inflection": "",
+    "type":"collocation"
+}, {
+    "_id": "annanstans_01",
+    "lemma": "annanstans",
+    "type": "lemma",
+    "pos": "adverb",
+    "inflection": "",
+    "meanings": [{
+        "order": 1,
+        "definition": "på annat ställe"
+    }]
+}, {
+    "_id": "annorstädes_01",
+    "lemma": "annorstädes",
+    "pos": "adverb",
+    "type": "lemma",
+    "inflection": "",
+    "meanings": [{
+        "order": 1,
+        "definition": "på annat ställe",
+        "examples": ["Det gäller såväl här, som överallt annorstädes."],
+        "cites": [{
+            "tags": ["nyhetstext"],
+            "title": "Hand i hand i Japan",
+            "url": "http://www.dn.se/nyheter/hand-i-hand-i-japan/",
+            "author": "Lars Epstein",
+            "work": "Dagens Nyheter",
+            "year": 2006,
+            "content": "I Japan, så tycks det mig, går människorna oftare än annorstädes, hand i hand."
+        }]
+    }]
+}, {
+    "_id": "fråga_02",
+    "lemma": "fråga",
+    "type": "lemma",
+    "pos": "noun",
+    "inflection": "sv-subst-n-or|pluralrot=fråg",
+    "meanings": [{
+        "order": 1,
+        "definition": "begäran om information eller att få en upplysning i ett visst ärende",
+        "examples": ["Det var en bra fråga du hade."]
+    }, {
+        "order": 2,
+        "definition": "något som är värt eller intressant att diskutera",
+        "examples": ["Vi har fyra frågor på dagordningen."]
+    }]
+}, {
+    "_id": "fråga_01",
+    "lemma": "fråga",
+    "type": "lemma",
+    "pos": "verb",
+    "inflection": "sv-verb-ar|rot=fråg",
+    "meanings": [{
+        "order": 1,
+        "definition": "säga eller skriva något i syfte att begära information",
+        "examples": ["Frågade du vilken tid ni börjar?"]
+    }]
+}, {
+    "_id": "ställa_fråga_01",
+    "pos": "vp",
+    "lemma": "ställa en fråga",
+    "type":"collocation"
+}, {
+    "_id": "besvara_fråga_01",
+    "pos": "vp",
+    "lemma": "besvara en fråga",
+    "type":"collocation"
+}, {
+    "_id": "svara_fråga_01",
+    "pos": "vp",
+    "lemma": "svara på fråga",
+    "type":"collocation"
+}, {
+    "_id": "bestorma_frågor_01",
+    "pos": "vp",
+    "lemma": "bestorma någon med frågor",
+    "type":"collocation"
+}, {
+    "_id": "yttra_fråga_01",
+    "pos": "vp",
+    "lemma": "yttra sig i en fråga",
+    "type":"collocation"
+}, {
+    "_id": "påläggskalv_01",
+    "lemma": "påläggskalv",
+    "type": "lemma",
+    "pos": "noun",
+    "inflection": "sv-subst-n-ar",
+    "meanings": [{
+        "order": 1,
+        "definition": "kalv avsedd för avel"
+    }, {
+        "order": 2,
+        "definition": "person som utväljs till att senare användas för viss (ansvarsfull) uppgift och som därför erhåller meriterande uppdrag",
+        "tags": ["bildligt"],
+        "cites": [{
+            "content": "Hon var redan distriktets ordförande i SSU och ansågs allmänt som påläggskalv eller snarare påläggskviga.",
+            "author": "Theodor Kallifatides",
+            "year": 2008,
+            "title": "Vänner och älskare",
+            "tags": ["skönlitteratur"]
+        }]
+    }]
+}, {
+    "_id": "pålägga_01",
+    "lemma": "pålägga",
+    "type": "lemma",
+    "pos": "verb",
+    "inflection": "sv-verb-er|rot=lägg",
+    "meanings": [{
+        "order": 1,
+        "tags": ["lantbruk"],
+        "definition": "uppföda till avelsdjur (till slakt)"
+    }]
+}, {
+    "_id": "kalv_01",
+    "type": "lemma",
+    "lemma": "kalv",
+    "pos": "noun",
+    "inflection": "sv-subst-n-ar",
+    "meanings": [{
+        "order": 1,
+        "definition": "ung avkomma till vissa djur, främst nötkreatur och vissa andra idisslare men även t ex valar"
+    }]
+}, {
+    "_id": "kalva_01",
+    "type": "lemma",
+    "lemma": "kalva",
+    "pos": "verb",
+    "inflection": "sv-verb-ar|rot=kalv",
+    "meanings": [{
+        "order": 1,
+        "definition": "föda kalv"
+    }]
+}, {
+    "_id": "kalvning_01",
+    "type": "lemma",
+    "lemma": "kalvning",
+    "pos": "noun",
+    "inflection": "sv-subst-n-ar",
+    "meanings": [{
+        "order": 1,
+        "definition": "det att föda kalv"
+    }]
+}, {
+    "_id": "skymla_01",
+    "lemma": "skymla",
+    "type": "lemma",
+    "pos": "verb",
+    "inflection": "sv-verb-ar",
+    "meanings": [{
+        "order": 1,
+        "definition": "stundvis synas otydligt, dunkelt skymta från och till",
+        "cites": [{
+            "tags": ["skönlitteratur"],
+            "year": 1903,
+            "author": "Henning Finne von Melsted",
+            "title": "Stormtider",
+            "content": "Det susar och brusar i blodet, det skymlar af konturer och färger."
+        }]
+    }]
+}, {
+    "_id": "menföre_01",
+    "lemma": "menföre",
+    "type": "lemma",
+    "pos": "noun",
+    "inflection": "sv-subst-t-oräkn",
+    "meanings": [{
+        "order": 1,
+        "definition": "dåligt väglag, dåligt före eller dåliga isar",
+        "tags": ["finlandssvenska", "ålderdomligt"],
+        "cites": [{
+            "tags": ["nyhetstext"],
+            "year": 2008,
+            "title": "Bättre finansiering av vägunderhåll",
+            "url": "http://www.ot.fi/Story/?linkID=26957",
+            "work": "Österbottens Tidning",
+            "content": "Vägar som pga blida och snölösa vintrar lider av allt värre menföre borde även uppmärksammas."
+        }, {
+            "tags": ["nyhetstext"],
+            "year": 2002,
+            "title": "Redan menföre i skärgården",
+            "url": "https://svenska.yle.fi/artikel/2002/12/12/redan-menfore-i-skargarden",
+            "work": "Yle Nyheter",
+            "author": "Patrick Holmström",
+            "content": "Vid inloppen till Gullkrona och Stenskär är det menföre och skeppare Henry Melén som kör förbindelsebåten Cheri i Nagu södra skärgård förbereder sej redan på att ta svävaren i bruk."
+        }]
+    }]
+}, {
+    "_id": "måndagsexemplar_01",
+    "type": "lemma",
+    "lemma": "måndagsexemplar",
+    "pos": "noun",
+    "inflection": "sv-subst-t-0",
+    "meanings": [{
+        "order": 1,
+        "definition": "undermålig produkt och/eller produkt med produktionsfel",
+        "tags": ["vardagligt", "skämtsamt"],
+        "cites": [{
+            "tags": ["blogg"],
+            "year": 2010,
+            "title": "Vi hittade antennproblemet – på Hisingen",
+            "content": "Och det var inte så att Thomas iphone 4 var ett ”måndagsexemplar”. Samma sak hände med min testmobil.",
+            "work": "Göteborgs-Posten",
+            "url": "http://blogg.gp.se/teknik/2010/08/10/vi-hittade-antennproblemet-pa-hisingen/",
+            "author": "Eva Wieselgren"
+        }]
+    }]
+}, {
+    "_id": "måndag_01",
+    "lemma": "måndag",
+    "type": "lemma",
+    "inflection": "sv-subst-n-ar",
+    "pos": "noun",
+    "meanings": [{
+        "order": 1,
+        "definition": "veckans första dag"
+    }]
+}, {
+    "_id": "exemplar_01",
+    "lemma": "exemplar",
+    "type": "lemma",
+    "inflection": "sv-subst-t-0",
+    "pos": "noun",
+    "meanings": [{
+        "order": 1,
+        "definition": "enskild fysisk eller elektronisk representation av något"
+    }]
+}, {
+    "_id": "exemplifiera_01",
+    "lemma": "exemplifiera",
+    "type": "lemma",
+    "pos": "verb",
+    "inflection": "sv-verb-ar",
+    "meanings": [{
+        "order": 1,
+        "definition": "ge exempel på",
+        "examples": ["Kan du exemplifiera när det är klokt att använda en vit lögn?"]
+    }]
+}, {
+    "_id": "exemplarisk_01",
+    "lemma": "exemplarisk",
+    "pos": "adjective",
+    "type": "lemma",
+    "inflection": "sv-adj-peri",
+    "meanings": [{
+        "order": 1,
+        "definition": "som kan föregå med gott exempel",
+        "examples": ["Hon är en exemplarisk mamma."]
+    }]
+}, {
+    "_id": "isk_01",
+    "lemma": "-isk",
+    "pos": "suffix",
+    "type": "morpheme",
+    "meanings": [{
+        "order": 1,
+        "definition": "suffix som talar om tillhörighet eller tillstånd"
+    }]
+}, {
+    "_id": "jätte_01",
+    "lemma": "jätte-",
+    "pos": "prefix",
+    "type": "morpheme",
+    "inflection": "",
+    "meanings": [{
+        "order": 1,
+        "definition": "prefix som läggs till adjektiv och adverb för att förstärka graden av betydelse"
+    }]
+}, {
+    "_id": "ing_01",
+    "lemma": "-ing",
+    "pos": "suffix",
+    "type": "morpheme",
+    "meanings": [{
+        "order": 1,
+        "definition": "suffix som läggs till adjektiv för att bilda ett substantiv för någon som har en viss egenskap"
+    }, {
+        "order": 2,
+        "definition": "suffix som läggs till verb för att bilda substantiv"
+    }]
+}]

@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+{% block body %}
+<a href="/">[home]</a> <a href="/e/{{word.lemmaID}}">[edit]</a>
+<h1>{{ word.lemma }}</h1>
+<p>{{ word.pos }}</p>
+{% for meaning in word.meanings %}
+
+<p>{% if meaning.tags %}{% for tag in meaning.tags %}<a href="/t/{{ tag }}" class='tag'>{{ tag }}</a>{% endfor %}{% endif %}
+{{ meaning.definition }}</p>
+
+{% if meaning.examples %}
+{% for example in meaning.examples %}
+<p class='example'>{{ example }}</p>
+{% endfor %} {% endif %}
+
+{% if meaning.cites %}
+<div class='cite-box'>
+{% for cite in meaning.cites %}
+{% with cite=cite %}
+{% include "cite.html" %}
+{% endwith %}{% endfor %}
+</div>
+{% endif %}
+{% endfor %}
+
+{% endblock %}
