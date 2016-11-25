@@ -87,7 +87,9 @@ if __name__ == "__main__":
                                 exampleSentence = parsedLineContent.strip_code()
                                 meaning["examples"].append(exampleSentence)
                             else:
-                                meaning["remainder"].append(lineContent)
+                                for template in mwparserfromhell.parse(lineContent).ifilter_templates(recursive=False):
+                                    tempName = str(template.name)
+                                    meaning.update({tempName:lineContent})
                             increaseIndex = increaseIndex + 1
                             nextLine = allLines[indx + increaseIndex]
                     except IndexError:
