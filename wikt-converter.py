@@ -13,7 +13,7 @@ def xmlToDict(filename):
 
 def saveDictAsJsonFile(doc, filename):
     with open(filename, "w") as fp:
-        fp.write(json.dumps(doc, indent=4, sort_keys=False))
+        fp.write(json.dumps(doc, indent=4, sort_keys=True))
 
 def printMainspaceTitles(doc):
     for page in doc["mediawiki"]["page"]:
@@ -51,12 +51,24 @@ def getPosSections(article):
 if __name__ == "__main__":
     doc = xmlToDict("small.xml")
     swedishArticles = getArticlesInLanguage(doc, "Svenska")
-    example = swedishArticles["fot"]
-    sections = getPosSections(example)
-    for s in sections:
-        text = sections[s]
-        for line in text.split("\n"):
-            if len(line) > 0 and line[0] == "#" and line[1] != ":":
-                print(s)
-                print(mwparserfromhell.parse(line).strip_code().strip())
-                print("-----------")
+    wordlist = []
+    for art in swedishArticles:
+        example = swedishArticles[art]
+        sections = getPosSections(example)
+        for s in sections:
+            article = {}
+            article["lemma"] = art
+            article["pos"] = s
+            article["meanings"] = []
+            text = sections[s]
+            for line in text.split("\n"):
+                if len(line) > 0 and line[0] == "#" and line[1] != ":":
+                    meaning = {}
+                    definition = mwparserfromhell.parse(line).strip_code().strip()
+                    number = len(article["meanings"]) + 1
+                    meaning["order"] = number
+                    meaning["definition"] = definition
+                    article["meanings"].append(meaning)
+                    print("-----------")
+            wordlist.append(article)
+        saveDictAsJsonFile(wordlist, "test_results.json")
