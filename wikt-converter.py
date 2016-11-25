@@ -1,6 +1,10 @@
 import json
 import xmltodict
+import re
 import mwparserfromhell
+
+def printNice(doc):
+    print(json.dumps(doc, indent=4, sort_keys=False))
 
 def xmlToDict(filename):
     with open(filename, "r") as fd:
@@ -26,15 +30,33 @@ def getSectionInLanguage(article, language):
     return parsed.get_sections(levels=[2], matches=language)
 
 def getArticlesInLanguage(doc, language):
-    articles = []
+    articles = {}
     for page in doc["mediawiki"]["page"]:
         if page["ns"] == "0":
             parsed = getSectionInLanguage(page["revision"]["text"]["#text"], language)
             if len(parsed) > 0:
-                articles.append(parsed)
+                pagetitle = page["title"]
+                articles[pagetitle] = parsed[0]
     return articles
+
+def getPosSections(article):
+    sectionList = {}
+    parsed = mwparserfromhell.parse(article).get_sections(levels=[3])
+    for section in parsed:
+        pos = section.split('\n', 1)[0]
+        pos = re.sub('^[^a-zA-z]*|[^a-zA-Z]*$','', pos)
+        sectionList[pos] = section
+    return sectionList
 
 if __name__ == "__main__":
     doc = xmlToDict("small.xml")
     swedishArticles = getArticlesInLanguage(doc, "Svenska")
-    print(swedishArticles[0][0])
+    example = swedishArticles["fot"]
+    sections = getPosSections(example)
+    for s in sections:
+        text = sections[s]
+        for line in text.split("\n"):
+            if len(line) > 0 and line[0] == "#" and line[1] != ":":
+                print(s)
+                print(mwparserfromhell.parse(line).strip_code().strip())
+                print("-----------")
