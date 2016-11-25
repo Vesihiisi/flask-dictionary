@@ -64,7 +64,11 @@ if __name__ == "__main__":
             for line in text.split("\n"):
                 if len(line) > 0 and line[0] == "#" and line[1] != ":":
                     meaning = {}
-                    definition = mwparserfromhell.parse(line).strip_code().strip()
+                    templates = mwparserfromhell.parse(line).filter_templates()
+                    if len(templates) > 0 and templates[0].name == "böjning":
+                        definition = "böjningsform"
+                    else:
+                        definition = mwparserfromhell.parse(line).strip_code().strip()
                     number = len(article["meanings"]) + 1
                     meaning["order"] = number
                     meaning["definition"] = definition
