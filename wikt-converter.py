@@ -75,16 +75,23 @@ if __name__ == "__main__":
                     meaning["order"] = number
                     meaning["definition"] = definition
                     meaning["remainder"] = []
+                    meaning["examples"] = []
                     article["meanings"].append(meaning)
                     try:
                         nextLine = allLines[indx+1]
                         increaseIndex = 1
                         while len(nextLine) > 0 and nextLine[0] == "#" and nextLine[1] == ":":
-                            meaning["remainder"].append(nextLine[2:])
+                            lineContent = nextLine[2:]
+                            parsedLineContent = mwparserfromhell.parse(lineContent)
+                            if len(mwparserfromhell.parse(lineContent).filter_templates()) == 0: # no templates means it's an example sentence
+                                exampleSentence = parsedLineContent.strip_code()
+                                meaning["examples"].append(exampleSentence)
+                            else:
+                                meaning["remainder"].append(lineContent)
                             increaseIndex = increaseIndex + 1
                             nextLine = allLines[indx + increaseIndex]
                     except IndexError:
                         pass
-                    print("processed: {} ({})".format(art, s))
+            print("processed: {} ({})".format(art, s))
             wordlist.append(article)
         saveDictAsJsonFile(wordlist, "test_results.json")
