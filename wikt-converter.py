@@ -85,9 +85,6 @@ if __name__ == "__main__":
                             nextLine = allLines[indx + increaseIndex]
                     except IndexError:
                         pass
-                    print("-----------")
-                # elif len(line) >0 and line[0] == "#" and line[1] == ":":
-                #     remainder.append(line)
-            article["remainder"] = remainder
+                    print("processed: {} ({})".format(art, s))
             wordlist.append(article)
         saveDictAsJsonFile(wordlist, "test_results.json")
