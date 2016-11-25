@@ -13,7 +13,7 @@ def xmlToDict(filename):
 
 def saveDictAsJsonFile(doc, filename):
     with open(filename, "w") as fp:
-        fp.write(json.dumps(doc, indent=4, sort_keys=True))
+        fp.write(json.dumps(doc, indent=4, sort_keys=True, ensure_ascii=False))
 
 def printMainspaceTitles(doc):
     for page in doc["mediawiki"]["page"]:
@@ -61,7 +61,9 @@ if __name__ == "__main__":
             article["pos"] = s
             article["meanings"] = []
             text = sections[s]
-            for line in text.split("\n"):
+            remainder = []
+            allLines = text.split("\n")
+            for indx, line in enumerate(allLines):
                 if len(line) > 0 and line[0] == "#" and line[1] != ":":
                     meaning = {}
                     templates = mwparserfromhell.parse(line).filter_templates()
@@ -72,7 +74,20 @@ if __name__ == "__main__":
                     number = len(article["meanings"]) + 1
                     meaning["order"] = number
                     meaning["definition"] = definition
+                    meaning["remainder"] = []
                     article["meanings"].append(meaning)
+                    try:
+                        nextLine = allLines[indx+1]
+                        increaseIndex = 1
+                        while len(nextLine) > 0 and nextLine[0] == "#" and nextLine[1] == ":":
+                            meaning["remainder"].append(nextLine[2:])
+                            increaseIndex = increaseIndex + 1
+                            nextLine = allLines[indx + increaseIndex]
+                    except IndexError:
+                        pass
                     print("-----------")
+                # elif len(line) >0 and line[0] == "#" and line[1] == ":":
+                #     remainder.append(line)
+            article["remainder"] = remainder
             wordlist.append(article)
         saveDictAsJsonFile(wordlist, "test_results.json")
