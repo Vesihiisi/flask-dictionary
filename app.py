@@ -70,16 +70,7 @@ def word(word):
 
 @app.route('/e/<lemma_id>',methods=['GET','POST'])
 def edit(lemma_id):
-    wordObject = Lemma(mongo.db.dictionary.find_one_or_404({'_id': lemma_id}))
-    form_content = LemmaForEdit(wordObject)
-    class F(FlaskForm):
-        pass
-    F.lemma = StringField('lemma')
-    for indx, meaning in enumerate(wordObject.meanings):
-        setattr(F, "definition_" + str(indx), TextAreaField())
-    setattr(F, "submit", SubmitField())
-    form = F(obj=form_content)
-    return render_template('edit.html', form=form)
+    return lemma_id
 
 @app.route('/t/<tag>')
 def tag(tag):
